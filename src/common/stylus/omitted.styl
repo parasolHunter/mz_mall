@@ -1,0 +1,39 @@
+/* **单行省略** */
+.sl-omitted
+    overflow hidden
+    text-overflow ellipsis
+    white-space nowrap
+/* ***双行省略***** */
+.twol-omitted
+    overflow hidden
+    text-overflow ellipsis
+    /* Safari、Opera 以及 Chrome */
+    display -webkit-box
+    -webkit-box-orient vertical
+    -webkit-line-clamp 2
+    /* Firefox */
+    display -moz-box
+    -moz-box-orient vertical
+    -moz-line-clamp 2
+    /* W3C */
+    display box
+    box-orient vertical /* vertical垂直排列，horizontal水平排列 */
+    line-clamp 2 /* 2行省略 */
+/* ***三行省略***** */
+.threel-omitted
+    overflow hidden
+    text-overflow ellipsis
+    /* Safari、Opera 以及 Chrome */
+    display -webkit-box
+    -webkit-box-orient vertical
+    -webkit-line-clamp 3
+    /* Firefox */
+    display -moz-box
+    -moz-box-orient vertical
+    -moz-line-clamp 3
+    /* W3C */
+    display box
+    box-orient vertical /* vertical垂直排列，horizontal水平排列 */
+    line-clamp 3 /* 2行省略 */
+.word-break
+    word-break break-all

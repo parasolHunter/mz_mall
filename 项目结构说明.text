@@ -1,0 +1,61 @@
+cube-ui 移动端 项目 模板：
+技术栈用到了：vue-cli3脚手架构建， vue全家桶（vuex+router+axios), stylus,eslint,amfe-flexible(rem动态布局计算)
+，postcss-px2rem（px 到 rem 转换），theme 可更改自定义主题, 
+
+另外 用 axios 封装了一个常用的请求方法(不能满足您的需求可自己修改)。
+
+另外 缩进语法检查 我是用的4个空格  这里你们注意一下。
+
+做的不好仅供参考噢！有什么问题群里直接@我
+
+├── public                     # 静态资源(所有此文件里面的文件是不会被编译及处理)
+│   │── favicon.ico            # favicon图标
+│   └── index.html             # 入口页面
+├── src                        # 项目源码目录
+│   ├── api                    # 所有请求
+│   │   ├── index.js		   # api默认访问的文件(所有请求接口全部写在这里)
+│   │   ├── request.js		   # axios 封装
+│   ├── assets                 # 字体、图片等静态资源(这个目录下的资源会被编译)
+│   ├── common                 # 公共资源
+│   │   ├── fonts			   # 字体文件
+│   │   ├── js				   # js文件
+│   │   ├── stylus	           # stylus样式
+│   │   ├── ├── base.styl	   # 基础样式
+│   │   ├── ├── index.styl	   # stylus默认访问的文件
+│   │   ├── ├── mixin.styl     # cube-ui可复用的样式方法
+│   │   ├── ├── variable.styl  # 定义一些变量以供项目中使用
+│   │   ├── util			   # 构建相关全局公用方法
+│   ├── components             # 公共组件目录
+│   │   ├── v-footer		   # 底部tab组件
+│   │   ├── v-jump-page		   # 公共弹出页面层
+│   ├── config                 # 全局配置文件
+│   │   ├── index.js		   # config默认访问文件
+│   ├── router                 # 前端路由
+│   │   ├── routerList		   # 路由模块 routes 配置项
+│   │   ├── index.js		   # router默认访问文件
+│   │   ├── router.js		   # 路由实例
+│   ├── store                  # 全局 store管理
+│   │   ├── module             # store 模块
+│   │   ├── index.js           # store默认访问文件
+│   │   ├── store.js		   # store实例
+│   ├── views                  # views 所有页面目录
+│   │   ├── chat			   # 聊天页面
+│   │   ├── details			   # 页面详情页
+│   │   ├── home			   # 主页面
+│   │   ├── my				   # 个人页面
+│   │   ├── no-page            # 404页面
+│   │   ├── shopping		   # 购物车页面
+│   ├── App.vue                # 入口页面
+│   ├── cube-ui.js             # cube-ui 组件引入
+│   ├── main.js                # 入口文件 加载组件 初始化等
+│   └── theme.styl             # 主题配置文件
+├── .browserslistrc            # 这个配置能够分享目标浏览器和nodejs版本在不同的前端工具。这些工具能根据目标浏览器自动来进行配置。
+├── .editorconfig              # 在不同的编辑器维护一致的编码样式
+├── .eslintrc.js               # eslint 配置项
+├── .gitignore                 # Git忽略提交规则
+├── babel.config.js            # 配置一些多个不同的组件库
+├── package-lock.json          # 安装时的包的版本号
+├── package.json               # package.json文件描述这个NPM包的所有相关信息，包括作者、简介、包依赖、构建等信息
+├── postcss.config.js          # rem布局配置(设计稿的大小：例如cube-ui基于375 * 667，但项目设计草案基于750 * 1334)
+├── README.md                  # 自述文件
+└── vue.config.js              # 全局的 CLI 配置文件
